@@ -1,4 +1,4 @@
-FROM FROM openjdk:17-jdk-alpine
+FROM openjdk:17-jdk-alpine
 
 RUN mkdir -p /usr/src/app
 
