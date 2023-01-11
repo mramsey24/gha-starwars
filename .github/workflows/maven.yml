@@ -52,7 +52,7 @@ jobs:
 
     steps:
     - name: Download temp artifact
-      uses: actions/download@v3.1.2
+      uses: actions/download@v3
       with: 
         name: my-gha-artifact    
     
