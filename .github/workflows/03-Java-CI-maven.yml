@@ -72,6 +72,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: user/app:latest
+        tags: mramsey24/gha-starwars:latest
 
 
