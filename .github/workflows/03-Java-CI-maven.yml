@@ -40,7 +40,9 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: my-gha-artifact
-        path: target/*.jar
+        path: |
+          target/*.jar
+          Dockerfile
         if-no-files-found: warn   
     
 # ---------------------------------------------------------
