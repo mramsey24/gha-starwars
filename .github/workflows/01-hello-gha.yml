@@ -1,0 +1,14 @@
+name: Java CI with Maven
+
+on:
+  workflow_dispatch:
+
+  
+jobs:
+  Hello-World:
+    name: "Hello World"  
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: echo "Hello, GHA"
