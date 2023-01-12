@@ -10,7 +10,7 @@ on:
     
 
 jobs:
-  Build:
+  mvn-build:
 
     runs-on: ubuntu-latest
 
