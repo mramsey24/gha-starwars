@@ -1,0 +1,21 @@
+name: Release Drafter
+
+on:
+  workflow_dispatch:
+  milestone:
+    types: [closed]
+
+jobs:
+  Draft-Release:
+    name: Draft Release
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create a releae draft for a milestone
+      id: create-release-draft
+      uses: mramsey24/auto-release-drafter
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Print the URL of the release draft
+      if: steps.create-release-draft.outputs.release-url != ''
+      run: echo ${{ steps.create-release-draft.outputs.release_url }}
