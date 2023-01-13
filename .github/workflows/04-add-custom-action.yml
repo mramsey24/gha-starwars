@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Create a releae draft for a milestone
       id: create-release-draft
-      uses: mramsey24/auto-release-mileston@2.0.1
+      uses: mramsey24/auto-release-milestone@2.0.1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
     
