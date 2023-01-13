@@ -2,7 +2,6 @@ name: Hello GitHub Actions
 
 on:
   workflow_dispatch:
-
   
 jobs:
   Hello-World:
